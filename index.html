@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            box-sizing: border-box;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .caja{
+            background-color: gray;
+            display: flex;
+            width: 450px;
+            overflow-x: auto;
+        }
+        .caja figure{
+            height: 150px;
+            display: flex;
+        }
+        .caja figure img{
+            width: 100%;
+            object-fit: cover;
+            
+        } */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.container2 {
+  display: grid;
+  grid-template-columns: 100% 100% 100%;
+  scroll-snap-type: both mandatory;
+  overflow: scroll;
+
+  border: 2px solid var(--gs0);
+  border-radius: 8px;
+  height: 100vh;
+}
+
+
+.container2 div {
+  scroll-snap-align: start;
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+}
+.container2 div:nth-child(1) {
+  background: hotpink;
+  color: white;
+}
+.container2 div:nth-child(2) {
+  background: azure;
+}
+.container2 div:nth-child(3) {
+  background: blanchedalmond;
+}
+.container2 div:nth-child(4) {
+  background: lightcoral;
+  color: white;
+}
+.container2 div:nth-child(5) {
+  background: rebeccapurple;
+  color: white;
+
+}
+
+          
+    </style>
+    <title>scrooll nav</title>
+</head>
+<body>
+    <!-- <section class="caja">
+        <figure>
+            <img src="img/uno.jpg" alt="" srcset="">
+        </figure>
+        <figure>
+            <img src="img/dos.jpg" alt="" srcset="">
+        </figure>
+        <figure>
+            <img src="img/tres.jpg" alt="" srcset="">
+        </figure>
+        <figure>
+            <img src="img/cuatro.png" alt="" srcset="">
+        </figure>
+    </section> -->
+    <div class="container2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+    
+</body>
+</html>
